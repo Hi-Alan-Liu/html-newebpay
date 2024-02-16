@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>藍新金流 Newebpay 範例</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>藍新金流 Newebpay 範例</h1>
+
+            <form id="newebpay" name='Newebpay' method='post' action='https://ccore.newebpay.com/MPG/mpg_gateway'>
+                <div class="mb-3">
+                    <label for="url" class="form-label">Url</label>
+                    <input type="text" class="form-control" id="url" value="https://ccore.newebpay.com/MPG/mpg_gateway">
+                </div>
+                <div class="mb-3">
+                    <label for="merchantID" class="form-label">MerchantID</label>
+                    <input type="text" class="form-control" id="merchantID" name='MerchantID'>
+                </div>
+                <div class="mb-3">
+                    <label for="tradeInfo" class="form-label">TradeInfo</label>
+                    <input type="text" class="form-control" id="tradeInfo" name='TradeInfo'>
+                </div>
+                <div class="mb-3">
+                    <label for="tradeSha" class="form-label">TradeSha</label>
+                    <input type="text" class="form-control" id="tradeSha" name='TradeSha'>
+                </div>
+                <div class="mb-3">
+                    <label for="version" class="form-label">Version</label>
+                    <input class="form-control" id="version" name='Version' value="2.0" disabled>
+                </div>
+                <button type="submit" class="btn btn-primary">前往付款</button>
+            </form>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
